@@ -1,0 +1,68 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body {
+    background: url('img/textura.jpg');
+    display:flex;
+    flex-direction:column;
+}
+
+/*reglas para index*/
+/* Titulo*/
+
+.titulo {
+    background-color: #3F9F98;
+    width: 25%;
+    ma
+
+}
+
+
+nav {
+    margin:auto;
+    width: 50%;
+}
+
+ul,ol { 
+    list-style:none;
+}
+
+.menu li a {
+    background-color:#EADBC4;
+    
+    text-decoration: none;
+    padding: 10px 15px;
+    display:block;
+}
+
+.menu li a:hover {
+    background-color:#7DCABD;
+}
+
+.sub {
+    float:left;
+    list-style: none;
+}
+
+.menu li ul {
+    display:none;
+    position:absolute;
+    width:140px;
+}
+
+.menu li ul li {
+    position:relative;
+}
+
+.menu li:hover > ul {
+    display:block;
+}
+
+.menu li ul li ul {
+    /* margin-top:20px; */
+    left:140px;
+    top:0px;
+
+}

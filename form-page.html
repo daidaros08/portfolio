@@ -4,17 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link rel="stylesheet" href="style-index.css">
     <title>Mi pagina de encuestas</title>
 </head>
 <body>
-    <header>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div id="contenedor">
+    <header class="header">
         <h1 id="title">Bienvenidos!</h1>
         <p id="description"> Te presento mi formulario</p>
     </header>
+    <br>
+    <br>
+    <br>
+
+    <nav class=menu>
+        <ul>
+            <li class=sub><a href="#">menu1</a>
+                <ul>
+                    <li><a href="#">submenu1</a></li>
+                    <li><a href="#">submenu2</a></li>
+                </ul>
+            </li>                
+            <li class=sub><a href="#">menu2</a>
+            </li>
+            
+            <li class=sub><a href="#">menu3</a>
+                <ul>
+                    <li><a href="#">submenu1</a></li>
+                    <li><a href="#">submenu2</a>
+                        <ul>
+                            <li><a href="#">subsubmenu1</a>              
+                                    <li><a href="#">submenu1</a></li>
+                                    <li><a href="#">submenu2</a></li>
+                                    <li><a href="#">submenu3</a></li>
+                                </ul>
+                            
+                            </li>
+                            <li><a href="#">subsubmenu2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <br>
+    
     <form id="survey-form" action="">
+        <label id="name-label">Nombre<input type="text" id="name" placeholder="Ingrese su nombre" required></label>
+        <br>
+        <label id="email-label">E-mail <input type="email" id="email" placeholder="Ingrese su E-mail" required></label>
+        <br>
+        <label id="number-label">Número <input type="number" max="90" min="15" id="number" placeholder="ingrese el número"></label>
+        <br>
+        <label for="select">Select <select id="dropdown" name="select"></label>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        </select>
+        <br>
+        <br>
+        <label>Seleccione una opcion</label>
+        <br>
+        <label for="op1">opcion 1<input type="radio" id="op1" name="op1" value="1" >
+        </label>
+        <br>
+        <label for="op2">opcion 2 <input type="radio" id="op2" name="op2" value="2"></label>
+        <br>
+        <br>
+
+        <label>Enviar <input type="submit" id="submit"></label>
 
     </form>
-    
+</div>
 </body>
 </html>
